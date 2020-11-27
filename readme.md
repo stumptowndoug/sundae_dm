@@ -11,6 +11,7 @@ email: dougdmail@gmail.com
     * [County Response Rates - Google Sheet File](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=1307001298)
     * ![County Response Rates](https://sundae-homework.s3-us-west-2.amazonaws.com/sundae_5.png)
     
+    
  2. **How does square footage and year built impact the performance of direct mail, if at all?**
     * There is very little correlation from square footage or year built within response rates.
     * When filtering for outliers (square footage > 0, year_built > 1900) the averages are as follows:
@@ -22,6 +23,7 @@ email: dougdmail@gmail.com
     * Correlation matrix shows a similar story
 
     * ![Correlation Matrix](https://sundae-homework.s3-us-west-2.amazonaws.com/sundae_4.png)
+    
        
  3. **If you were in charge of our direct mail program, how would you optimize it?**
     * I would likely start with the demographics of each home using census data.  In the past, I've used census block group data to help built out modeling with inputs (avg household income, age, education, etc.). Some of that could help prioritize locations to send direct mail.  I would assume there is a correlation between household income and likelihood to respond.
@@ -29,10 +31,13 @@ email: dougdmail@gmail.com
     * Other ideas would be to use 3rd party appends for specific property imagery.  Google street maps image classification could be useful. There are some other powerful image providers that could be used, such as detecting roof and yard quality.
 
 
+
 ## Documentation:
+
 
 ### Step 1
 Downloaded a CSV file with 528,549 rows related to a direct mail file.
+
 
 ### Step 2
 When opening the file there we quoted characters around the following fields:
