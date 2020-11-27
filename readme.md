@@ -7,11 +7,11 @@ email: dougdmail@gmail.com
 
 
 ## Assigntment Questions:
- **1. Calculate response rate, appointment rate, contract rate in aggregate by County & City**
+ 1. **Calculate response rate, appointment rate, contract rate in aggregate by County & City**
     * [County Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=1307001298)
     * [City Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=130315298)
     
- **2. How does square footage and year built impact the performance of direct mail, if at all?**
+ 2. **How does square footage and year built impact the performance of direct mail, if at all?**
     * There is very little correlation between either square footage or year built within repsonse rates.
     * When filtering for outliers (square footage > 0, year_built > 1900) the averages are as follows:
        * Response square_feet AVG = 1,410
