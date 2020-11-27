@@ -6,13 +6,13 @@ email: dougdmail@gmail.com
 
 
 
-## Assigntment Questions:
+## Assignment Questions:
  1. **Calculate response rate, appointment rate, contract rate in aggregate by County & City**
     * [County Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=1307001298)
     * [City Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=130315298)
     
  2. **How does square footage and year built impact the performance of direct mail, if at all?**
-    * There is very little correlation between either square footage or year built within repsonse rates.
+    * There is very little correlation between either square footage or year built within response rates.
     * When filtering for outliers (square footage > 0, year_built > 1900) the averages are as follows:
        * Response square_feet AVG = 1,410
        * Non-Response square_feet AVG = 1,439
@@ -79,7 +79,7 @@ I wanted to understand what duplicates were in the data file and I found the fol
 
 ```SQL
 ----------------------------------------------------------------
--- QUERY DATA TO SEE HOW MANY DUPLCIATE PROPERTY_ID'S THERE ARE
+-- QUERY DATA TO SEE HOW MANY DUPLICATE PROPERTY_ID'S THERE ARE
 ----------------------------------------------------------------
 
 SELECT
@@ -244,7 +244,7 @@ county
 ```
 
 ### Step 10
-Repsonse rate analysis by sqare feet and year built
+Response rate analysis by square feet and year built
 
 ```SQL
 -------------------------------------------------------------------------------
