@@ -19,7 +19,7 @@ email: dougdmail@gmail.com
        * Response year_built AVG = 1961
        * Non-Response year_built = 1961
        
-    * There is also no significant correlation using a correlation matrix 
+    * Correlation matrix shows a similar story
 
     * ![Correlation Matrix](https://sundae-homework.s3-us-west-2.amazonaws.com/sundae_4.png)
        
