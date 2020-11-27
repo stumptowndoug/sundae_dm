@@ -10,6 +10,7 @@ email: dougdmail@gmail.com
  1. **Calculate response rate, appointment rate, contract rate in aggregate by County & City**
     * [County Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=1307001298)
     * [City Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=130315298)
+    * ![County Response Rates](https://sundae-homework.s3-us-west-2.amazonaws.com/sundae_5.png)
     
  2. **How does square footage and year built impact the performance of direct mail, if at all?**
     * There is very little correlation between either square footage or year built within response rates.
