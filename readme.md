@@ -23,7 +23,7 @@ email: dougdmail@gmail.com
        * ![Correlation Matrix](https://sundae-homework.s3-us-west-2.amazonaws.com/sundae_4.png)
        
  3. **If you were in charge of our direct mail program, how would you optimize it?**
-    * I would likely start with the demographics of each home using census data.  In the past, I've used census block group data to help built out modeling with inputs such as avg household income, age, education, etc.). Some of that could help prioritize locations to send direct mail.  I would assume there is a correlation between household income and likelihood to respond.
+    * I would likely start with the demographics of each home using census data.  In the past, I've used census block group data to help built out modeling with inputs (avg household income, age, education, etc.). Some of that could help prioritize locations to send direct mail.  I would assume there is a correlation between household income and likelihood to respond.
     * Census data is great, but it's also generalized. It would be great to understand each homeowner individually and some append data through providers such as acxiom could help make demographic insights more precise.
     * Other ideas would be to use 3rd party appends for specific property imagery.  Google street maps image classification could be useful. There are some other powerful image providers that could be used, such as detecting roof and yard quality.
 
