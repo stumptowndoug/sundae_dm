@@ -13,7 +13,7 @@ email: dougdmail@gmail.com
     * ![County Response Rates](https://sundae-homework.s3-us-west-2.amazonaws.com/sundae_5.png)
     
  2. **How does square footage and year built impact the performance of direct mail, if at all?**
-    * There is very little correlation between either square footage or year built within response rates.
+    * There is very little correlation from square footage or year built within response rates.
     * When filtering for outliers (square footage > 0, year_built > 1900) the averages are as follows:
        * Response square_feet AVG = 1,410
        * Non-Response square_feet AVG = 1,439
