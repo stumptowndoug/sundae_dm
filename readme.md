@@ -1,7 +1,6 @@
 # Sundae Homework Assignment
 
 Author: Doug Dement<br/>
-[LinkedIn](https://www.linkedin.com/in/doug-dement-34795551/)<br/>
 email: dougdmail@gmail.com
 
 
