@@ -20,7 +20,7 @@ email: dougdmail@gmail.com
        * Non-Response year_built = 1961
        
     * There is also no significant correlation using a correlation matrix
-       * ![Correlation Matrix](https://sundae-homework.s3-us-west-2.amazonaws.com/sundae_4.png)
+        ![Correlation Matrix](https://sundae-homework.s3-us-west-2.amazonaws.com/sundae_4.png)
        
  3. **If you were in charge of our direct mail program, how would you optimize it?**
     * I would likely start with the demographics of each home using census data.  In the past, I've used census block group data to help built out modeling with inputs (avg household income, age, education, etc.). Some of that could help prioritize locations to send direct mail.  I would assume there is a correlation between household income and likelihood to respond.
