@@ -7,17 +7,20 @@ email: dougdmail@gmail.com
 
 
 ## Assigntment Questions:
- 1. Calculate response rate, appointment rate and contract rate in aggregate by County & City
+ 1. Calculate response rate, appointment rate, contract rate in aggregate by County & City
     * [County Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=1307001298)
     * [City Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=130315298)
     
  2. How does square footage and year built impact the performance of direct mail, if at all?
     * There is very little correlation between either square footage or year built within repsonse rates.
     * When filtering for outliers (square footage > 0, year_built > 1900) the averages are as follows:
-       * Response square_feet AVG = 1410
-       * Non-Response square_feet AVG = 1439
+       * Response square_feet AVG = 1,410
+       * Non-Response square_feet AVG = 1,439
        * Response year_built AVG = 1961
        * Non-Response year_built = 1961
+       
+    * There is also no significant correlation using a correlation matrix
+       * ![Correlation Matrix](https://sundae-homework.s3-us-west-2.amazonaws.com/sundae_4.png)
 
 
 ## Documentation:
@@ -240,5 +243,54 @@ ORDER BY
 county
 ```
 
-[Data File with Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit?usp=sharing)
+### Step 10
+Repsonse rate analysis by sqare feet and year built
 
+```SQL
+-------------------------------------------------------------------------------
+-- RESPONSE RATE ANALYSIS FOR SQUARE FEET & YEAR BUILT
+-------------------------------------------------------------------------------
+
+SELECT
+lead,
+AVG(square_feet) as avg_sq_ft,
+MIN(square_feet) as min_sq_ft,
+MAX(square_feet) as max_sq_ft,
+
+AVG(year_built) as avg_yr_built,
+MIN(year_built) as min_yr_built,
+MAX(year_built) as max_yr_built
+
+FROM
+dist_ordered_mail_data
+
+WHERE
+square_feet > 0
+and year_built > 1900
+
+GROUP BY
+1
+```
+
+```PY
+
+#---RESPONSE RATE ANALYSIS IN PYTHON---#
+
+import pandas as pd
+import seaborn as sn
+import matplotlib.pyplot as plt
+
+data = pd.read_csv('/Users/DougDement/Documents/Dev/sundae/final_sundae_data.csv')
+
+df = pd.DataFrame(data,columns=['lead','appointment','contract','square_feet','year_built'])
+df = df[df['square_feet'] > 0]
+df = df[df['year_built'] > 1900]
+
+df[:10]
+
+df.corr(method ='pearson')
+
+corrMatrix = df.corr()
+sn.heatmap(corrMatrix, annot=True)
+plt.show()
+```
