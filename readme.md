@@ -5,6 +5,16 @@ Author: Doug Dement<br/>
 email: dougdmail@gmail.com
 
 
+## Assigntment Questions:
+ 1. Calculate response rate, appointment rate and contract rate in aggregate by County & City
+    * [County Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=1307001298)
+    * [City Response Rates](https://docs.google.com/spreadsheets/d/1sjsWsPg0gsrzWZHYHY8fLAMaPqkGoVkWORcCJ5MPFQ4/edit#gid=130315298)
+    
+ 2. How does square footage and year built impact the performance of direct mail, if at all?
+
+
+## Documentation:
+
 ### Step 1
 Downloaded a CSV file with 528,549 rows related to a direct mail file.
 
